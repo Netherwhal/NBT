@@ -13,7 +13,6 @@ setup(
     license=open("LICENSE.txt").read(),
     long_description=open("README.txt").read(),
     packages=['nbt'],
-    install_requires=['mutf8'],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",

@@ -13,7 +13,10 @@ except ImportError:  # for Python 2.7
     from collections import MutableMapping, MutableSequence, Sequence
 import sys
 
-import mutf8
+try:
+    import mutf8  # prefer external package
+except ImportError:
+    from . import mutf8
 
 _PY3 = sys.version_info >= (3,)
 if _PY3:
